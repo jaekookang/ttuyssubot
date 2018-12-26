@@ -1,3 +1,8 @@
+# Note
+- Issue (2018-12-26 Jaekoo Kang): The pretrained word-vector model is not properly loaded by fastText.
+  This seems to the recent update of fastText, requiring users to re-train their model (...).
+  A new model with the new version of fastText is needed to run this program. No further step is required at this point.
+
 # Ttuyssubot
 Contextual Spacing for Conversation-style (and non-normalized) Text
 

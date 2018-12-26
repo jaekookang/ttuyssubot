@@ -1,3 +1,4 @@
+import ipdb as pdb
 import numpy as np
 import sys
 
@@ -6,11 +7,12 @@ def read_data(filename):
         data = [line.split('\t') for line in f.read().splitlines()]
     return data
 
-import fasttext
+import fastText
 
 print('\nImporting dictionaries...')
 
-model_drama = fasttext.load_model('vectors/model_drama.bin')
+model_drama = fastText.load_model('/Volumes/Transcend/_DataArchive/model_drama.bin')
+pdb.set_trace()
 
 import tensorflow as tf
 from keras.backend.tensorflow_backend import set_session
